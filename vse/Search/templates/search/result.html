@@ -1,0 +1,36 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SRS Vertical Search Engine</title>
+	<link rel="stylesheet" type="text/css" href="/static/result.css">
+</head>
+<body>
+		<div class="head">
+		<span class="form">
+		<img src="/static/Untitled.png" width="50px" height="30px" alt="SRS">
+			<form action="" method="POST">
+				 {% csrf_token %}
+				<input type="text" name="key" size="50" value="{{keyword}}"/>
+				<input type="submit"/>
+			</form></span>
+			
+			<hr></hr>
+		</div>
+	
+<div class="result_row">	
+{%for mobile in all_mobile%}
+	<div class="data">
+	<a href={{mobile.url}}><h2>{{mobile.title}}</h2></a>
+	<a href={{mobile.url}} class="url"><p>{{mobile.url}}</p></a>
+	<span class="Pr-Av"><b>Price: </b></span>
+	<span class="values">{{mobile.price}}</span>
+	<span class="Pr-Av"><b>|  Availability:</b></span>
+	<span class="values">{{mobile.avalable}}</span>
+	<p class="info">{{mobile.info}}</p>
+	</div>
+</br>
+{%endfor%}
+</body>
+</html>

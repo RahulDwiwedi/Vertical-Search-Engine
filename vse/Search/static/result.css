@@ -1,0 +1,76 @@
+body{
+margin:0px;
+}
+form{
+margin-left: 20px;
+
+}
+
+.head {
+margin:0px;
+    background: #e4e2e2;
+    padding-top: 18px;
+    z-index: 999;
+    position: fixed;
+    top: 0px;
+    width: 100%;
+}
+.form input[type="text"] {
+    width: 40%;
+    padding: 6px;
+    margin-left: 53px;
+    color: #d9d9d9;
+	border-radius: 5px;
+    font-size: 15px;
+}
+
+.result_row{
+margin-left:20px;
+margin-top: 100px;
+}
+.form input[type="submit"] {
+    padding: 8px;
+    border-radius: 5px;
+	font-size: 15px;
+    border: none;
+    outline: none;
+    width: 100px;
+    cursor: pointer;
+}
+.form input[type="text"]:focus
+{
+color: #474747;
+border:1px solid yellow
+}
+h2,h3,p{
+margin:0px;
+}
+.data{
+margin-left:10px;
+}
+hr {
+box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.37);
+}
+.url{
+color:#ff0000;
+}
+.values{
+color:#0cd60c;
+}
+.Pr-Av{
+color:#000000;
+}
+p.info{
+color:#848383;
+width: 85%;
+}
+img {
+    position: absolute;
+    border-radius: 5px;
+	margin-left: 20px;    
+	height: 32px;
+}
+a{
+text-decoration:None;
+color:#04a8f9;
+}
